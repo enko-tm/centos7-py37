@@ -5,6 +5,7 @@ FROM centos:7
 RUN yum update -y
 RUN yum install -y epel-release
 RUN yum install nginx -y
+RUN yum install httpd -y
 RUN yum install  -y gcc openssl-devel bzip2-devel libffi-devel
 RUN yum -y groupinstall development
 RUN yum -y groupinstall 'Development Tools'
