@@ -12,6 +12,7 @@ RUN yum -y groupinstall 'Development Tools'
 RUN yum -y install make
 
 RUN yum install wget -y
+RUN yum install -y php-fpm php-cli php-mysql
 
 RUN wget -P /src/python37/ https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
 RUN tar xzf /src/python37/Python-3.7.3.tgz -C /src/python37
